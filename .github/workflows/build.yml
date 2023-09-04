@@ -13,4 +13,5 @@ jobs:
     with:
       env: ubuntu-22.04
       get-redis: true
+      deps-install-mode: sudo
     secrets: inherit
