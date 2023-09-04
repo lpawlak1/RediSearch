@@ -877,6 +877,11 @@ jobs:
       - checkout-all
       - install-prerequisites
       - run:
+          name: Install RLTest with print
+          shell: /bin/bash -l -eo pipefail
+          command: |
+            python3 -m pip install git+https://github.com/RedisLabsModules/RLTest.git@add_print
+      - run:
           name: Prepare Conan dependencies
           shell: /bin/bash -l -eo pipefail
           command: |
